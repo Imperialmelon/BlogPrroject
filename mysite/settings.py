@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     'django.contrib.sitemaps',
     'django.contrib.staticfiles',
+    'django.contrib.postgres',
     'blog',
     'taggit'
 ]
@@ -83,11 +84,11 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'Blog', # Имя вашей БД. Если вы создали черезе psql или IDE свою базу и хотите использовать его - пропишите его имя здесь
-        'USER': 'student',
-        'PASSWORD': 'root',
-        'HOST': '172.20.10.6',
-        'PORT': 5432, # Стандартный порт PostgreSQL
+        'NAME': 'blog', # Имя вашей БД. Если вы создали черезе psql или IDE свою базу и хотите использовать его - пропишите его имя здесь
+        'USER': 'blog',
+        'PASSWORD': '123',
+        'HOST': 'localhost',
+        'PORT': 5431, # Стандартный порт PostgreSQL
     }
 }
 
